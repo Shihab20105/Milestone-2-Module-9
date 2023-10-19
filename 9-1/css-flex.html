@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module-9-9.1 | Simple Layout Design</title>
+    <style>
+        .container{
+            display: flex;
+            /* flex-wrap: wrap; */
+            /* flex-direction: column; */
+            gap: 10px;
+        }
+        .box{
+            height: 200px;
+            /* width: 200px; */
+            width: 100%;
+            /* width: 700px; */
+            background-color: aquamarine;
+        }
+        @media screen and (max-width: 576px) {
+            /* flex-direction: column; */
+            .container{
+                flex-direction: column;
+            }
+        }
+        @media screen and (min-width: 577px) and (max-width: 992px) {
+            .box{
+                background-color: antiquewhite;
+            }
+        }
+    </style>
+    <span>Milestone-2-Module-9-9.1:</span>
+</head>
+<body>
+    <h2>Simple Responsive Flexbox</h2>
+    <section class="container">
+        <!-- .box*4>h3{box-$} -->
+        <div class="box">
+            <h3>box-1</h3>
+        </div>
+        <div class="box">
+            <h3>box-2</h3>
+        </div>
+        <div class="box">
+            <h3>box-3</h3>
+        </div>
+        <div class="box">
+            <h3>box-4</h3>
+        </div>
+    </section>
+
+    <br>
+    <h4>Simple layout design with CSS flex, media query.</h4>
+    
+</body>
+</html>
